@@ -1,0 +1,61 @@
+<div class="login-container">
+  <div class="login-middle-data">
+    <div class="login-bg">
+      <div class="logo-container">
+        <img src="../../assets/images/login-logo.svg" />
+      </div>
+      <h2 class="text-center"><b>Tech App Builder</b></h2>
+      <h5 class="text-center"><b>The Power of Possibility</b></h5>
+    </div>
+    <div class="login-data">
+      <h2><b>Sign In</b></h2>
+      <h5>
+        Don't have account ? <a href="#"><b>Sign Up</b></a>
+      </h5>
+      <div class="form-data">
+        <form
+          autocomplete="off"
+          [formGroup]="signInForm"
+          (ngSubmit)="onSubmit()"
+        >
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Application</label>
+            <select
+              class="form-control"
+              id="exampleFormControlSelect1"
+            >
+              <option>TAB_Backup</option>
+              <option>PMS_Backup</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              autocomplete="off"
+              class="form-control"
+              id="exampleInputEmail1"
+              formControlName="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              autocomplete="new-password"
+              class="form-control"
+              id="exampleInputPassword1"
+              formControlName="password"
+              placeholder="Enter Password"
+            />
+          </div>
+          <h6>
+            <a href="#"><b>Forgot password?</b></a>
+          </h6>
+          <button type="submit" class="btn btn-primary mt-4">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
